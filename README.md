@@ -24,5 +24,5 @@ $ cd pointfiles
 Agora so usar o stow e para criar os SymLinks e GG.
 
 ```
-$ stow.
+$ stow .
 ```
