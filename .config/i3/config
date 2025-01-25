@@ -92,7 +92,7 @@ bindsym Mod1+Shift+$right move right
 bindsym Mod1+Shift+Right move right
 
 # split in horizontal orientation
-bindsym Mod1+b split h
+bindsym Mod1+g split h
 
 # split in vertical orientation
 bindsym Mod1+v split v
@@ -169,7 +169,11 @@ bindsym Mod1+Shift+r restart
 bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # custom bindings
-bindsym Mod1+p exec ~/.config/i3/polybar_toggle.sh 
+bindsym Mod1+b exec ~/.config/i3/polybar_toggle.sh 
+
+bindsym Mod1+n exec --no-startup-id ~/.config/rofi/powermenu/type-1/powermenu.sh
+
+bindsym Mod1+m exec --no-startup-id ~/.config/rofi/launchers/type-1/launcher.sh
 
 exec --no-startup-id feh --bg-fill ~/Downloads/arch.png
 
