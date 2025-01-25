@@ -1,0 +1,13 @@
+1. tokyonight
+2. rose-pine
+3. plenary
+4. telescope
+5. trouble
+6. nvim-treesiter
+7. undotree
+8. vim-fugitive
+9. zen-mode
+10. copilot.vim
+11. cellular-automaton
+12. cloak
+
