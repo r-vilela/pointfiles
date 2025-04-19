@@ -3,7 +3,7 @@ return {
 	{
 		"rose-pine/neovim",
 		name = "rose-pine",
-		condig = function()
+		config = function()
 			vim.cmd("colorscheme rose-pine")
 		end
 	},
@@ -12,12 +12,13 @@ return {
 		name = "plenary"
 	},
 	{
-		"nvim-telescope/telescope.nvim",
-		dependencies = { "plenary" }
-	},
-	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate"
 	},
+    {
+        "ThePrimeagen/harpoon",
+        branch="harpoon2",
+        dependencies={"nvim-lua/plenary.nvim"},
+    },
 	"mbbill/undotree",
 }
