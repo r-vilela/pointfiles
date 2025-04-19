@@ -1,4 +1,4 @@
-return {
+ return {
     "laytan/cloak.nvim",
 
     config = function()

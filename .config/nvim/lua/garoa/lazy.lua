@@ -20,5 +20,8 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("garoa.config")
+require("lazy").setup({
+    spec="garoa.config",
+    change_detection = {notify = false}
+})
 
