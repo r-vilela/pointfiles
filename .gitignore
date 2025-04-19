@@ -9,3 +9,8 @@
 .config/user-dirs.locale
 .config/yay
 .config/neofetch
+
+.config/Postman
+.config/balenaEtcher
+.config/composer
+
