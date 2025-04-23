@@ -27,7 +27,6 @@ vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 
-
 -- Delete to void
 vim.keymap.set("n", "<leader>d", "\"_d")
 vim.keymap.set("v", "<leader>d", "\"_d")
@@ -35,8 +34,12 @@ vim.keymap.set("v", "<leader>d", "\"_d")
 -- When <C-v>, select lines, I, write text, you to hit esc to apply what you inserted to all lines
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
+-- Clear highlights from search
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearc<CR>")
+vim.keymap.set("n", "<C-c>", "<cmd>nohlsearc<CR>")
+
 -- Primeagen hates capital q and Ex mode aparently, not sure. CHECK IT OUT LATE!!
-vim.keymap.set("n", "Q", "nop") 
+vim.keymap.set("n", "Q", "nop")
 -- Finds a file and creates a tmux session on it
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 -- format according to lsp
@@ -54,3 +57,5 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 -- Turn current file on executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = True })
+
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
