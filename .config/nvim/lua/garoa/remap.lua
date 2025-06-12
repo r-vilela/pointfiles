@@ -54,7 +54,7 @@ vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 -- Get the selected word and substitute it on the whole file
-vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
+vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/g<Left><Left><Left>")
 -- Turn current file on executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = True })
 
