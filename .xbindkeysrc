@@ -1,0 +1,39 @@
+# move mouse left
+"xdotool mousemove_relative -- -10 0"
+Shift + Mod4 + h
+
+# move mouse more left
+"xdotool mousemove_relative -- -100 0"
+Mod4 + h
+
+# move mouse right
+"xdotool mousemove_relative -- 10 0"
+Shift + Mod4 + l
+
+# move mouse more right
+"xdotool mousemove_relative -- 100 0"
+Mod4 + l
+
+# move mouse up
+"xdotool mousemove_relative -- 0 -10"
+Shift + Mod4 + k
+
+# move mouse more up
+"xdotool mousemove_relative -- 0 -100"
+Mod4 + k
+
+# move mouse down
+"xdotool mousemove_relative -- 0 10"
+Shift + Mod4 + j
+
+# move mouse more down
+"xdotool mousemove_relative -- 0 100"
+Mod4 + j
+
+# mouse right click
+"xdotool click 1"
+Mod4 + m
+
+# mouse right click
+# "sleep 0.2 && click --clearmodifiers 3"
+# Mod4 + r
