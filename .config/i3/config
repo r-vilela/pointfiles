@@ -41,7 +41,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
-set $up k 
+set $up k
 set $down j
 set $left h
 set $right l
@@ -54,7 +54,7 @@ floating_modifier Mod1
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym Mod1+q exec kitty
+bindsym Mod1+q exec st
 
 # kill focused window
 bindsym Mod1+c kill
@@ -138,7 +138,7 @@ set $ws9 "9"
 set $ws10 "10"
 
 # switch to workspace
-bindsym Mod1+1 workspace number $ws1 
+bindsym Mod1+1 workspace number $ws1
 bindsym Mod1+2 workspace number $ws2
 bindsym Mod1+3 workspace number $ws3
 bindsym Mod1+4 workspace number $ws4
@@ -169,7 +169,7 @@ bindsym Mod1+Shift+r restart
 bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # custom bindings
-bindsym Mod1+b exec ~/.config/i3/polybar_toggle.sh 
+bindsym Mod1+b exec ~/.config/i3/polybar_toggle.sh
 
 bindsym Mod1+n exec --no-startup-id ~/.config/rofi/powermenu/type-1/powermenu.sh
 
