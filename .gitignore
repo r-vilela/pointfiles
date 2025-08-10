@@ -13,5 +13,16 @@
 
 .config/Postman
 .config/LogSeq
+.config/Logseq
 .config/balenaEtcher
 .config/composer
+.config/gh
+.config/QtProject.conf
+.config/kritadisplayrc
+.config/kritarc
+
+.config/discord
+.config/go
+.config/karboncalligraphyrc
+.config/mimeapps.list
+.config/pavucontrol.ini
