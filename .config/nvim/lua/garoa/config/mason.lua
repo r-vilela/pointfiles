@@ -8,7 +8,6 @@ return {
     'saghen/blink.cmp',
 
     config = function()
-        print("hello from lsp")
         require("mason").setup()
         require("fidget").setup()
         require("mason-lspconfig").setup({

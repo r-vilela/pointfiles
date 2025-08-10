@@ -1,18 +1,18 @@
 -- TODO:
 --
 --      "neovim/nvim-lspconfig",
---      depencies={
-    --      "willianboman/mason.nvim",
-    --      "willianboman/mason-lspconfig.nvim",
-    --      "hrsh7th/cmp-nvim-lsp",
-    --      "hrsh7th/cmp-nvim-buffer",
-    --      "hrsh7th/cmp-cmdline",
-    --      "hrsh7th/cmp-cmdline",
-    --      "hrsh7th/nvim-cmp",
-    --      "L3MON4D3/LuaSnip",
-    --      "saadparwaiz1/cmp_luasnip",
-    --      "j-hui/fidget.nvim"
-    --  }
+--      depencies
+--      "willianboman/mason.nvim",
+--      "willianboman/mason-lspconfig.nvim",
+--      "hrsh7th/cmp-nvim-lsp",
+--      "hrsh7th/cmp-nvim-buffer",
+--      "hrsh7th/cmp-cmdline",
+--      "hrsh7th/cmp-cmdline",
+--      "hrsh7th/nvim-cmp",
+--      "L3MON4D3/LuaSnip",
+--      "saadparwaiz1/cmp_luasnip",
+--      "j-hui/fidget.nvim"
+--
 return {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
@@ -32,7 +32,6 @@ return {
     },
     config = function()
         -- Brief aside: **What is LSP?**
-        print("hello from lst")
         --
         -- LSP is an initialism you've probably heard, but might not understand what it is.
         --
@@ -193,6 +192,7 @@ return {
                 end,
             },
         }
+
         -- LSP servers and clients are able to communicate to each other what features they support.
         --  By default, Neovim doesn't support everything that is in the LSP specification.
         --  When you add blink.cmp, luasnip, etc. Neovim now has *more* capabilities.
@@ -272,47 +272,4 @@ return {
             },
         }
     end,
-
-    { -- Autoformat
-        'stevearc/conform.nvim',
-        event = { 'BufWritePre' },
-        cmd = { 'ConformInfo' },
-        keys = {
-            {
-                '<leader>f',
-                function()
-                    require('conform').format { async = true, lsp_format = 'fallback' }
-                end,
-                mode = '',
-                desc = '[F]ormat buffer',
-            },
-        },
-        opts = {
-            notify_on_error = false,
-            format_on_save = function(bufnr)
-                -- Disable "format_on_save lsp_fallback" for languages that don't
-                -- have a well standardized coding style. You can add additional
-                -- languages here or re-enable it for the disabled ones.
-                local disable_filetypes = { c = true, cpp = true }
-                if disable_filetypes[vim.bo[bufnr].filetype] then
-                    return nil
-                else
-                    return {
-                        timeout_ms = 500,
-                        lsp_format = 'fallback',
-                    }
-                end
-            end,
-            formatters_by_ft = {
-                lua = { 'stylua' },
-                -- Conform can also run multiple formatters sequentially
-                -- python = { "isort", "black" },
-                --
-                -- You can use 'stop_after_first' to run the first available formatter from the list
-                -- javascript = { "prettierd", "prettier", stop_after_first = true },
-            },
-
-
-        }
-    }
-    }
+}

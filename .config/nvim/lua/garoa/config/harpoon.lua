@@ -1,5 +1,5 @@
 return {
-    
+
     "ThePrimeagen/harpoon",
 
     branch="harpoon2",
@@ -28,7 +28,7 @@ return {
                 sorter = conf.generic_sorter({}),
             }):find()
         end
-                
+
 
         vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
         vim.keymap.set("n", "<C-f>", function() toggle_telescope(harpoon:list()) end,
