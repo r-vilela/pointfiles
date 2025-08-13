@@ -26,3 +26,5 @@
 .config/karboncalligraphyrc
 .config/mimeapps.list
 .config/pavucontrol.ini
+
+.config/i3/polybar_toggle.sh
