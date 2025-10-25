@@ -28,3 +28,9 @@
 .config/pavucontrol.ini
 
 .config/i3/polybar_toggle.sh
+.config/Google
+.config/SuperCollider
+.config/aseprite
+.config/depot_tools
+.config/rclone
+.config/sonic-pi.net
