@@ -34,3 +34,4 @@
 .config/depot_tools
 .config/rclone
 .config/sonic-pi.net
+.config/godot
