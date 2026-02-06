@@ -56,6 +56,8 @@ tiling_drag modifier titlebar
 # start a terminal
 bindsym Mod1+q exec st
 
+bindsym Mod1+Shift+s exec flameshot gui
+
 # kill focused window
 bindsym Mod1+c kill
 
