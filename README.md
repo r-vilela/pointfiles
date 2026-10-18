@@ -23,8 +23,11 @@ $ cd pointfiles
 
 Agora so usar o stow e para criar os SymLinks e GG.
 
+### Atencao
+deve usar o stow para cada diretorio criado.
+
 ```
-$ stow .
+$ stow nvim i3 zshrc xbindkeysrc # Entre outros
 ```
 
 Para conectar no na rede eduroam:
